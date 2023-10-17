@@ -20,7 +20,7 @@ function runScript() {
     console.log("Press 4 to divide");
     console.log("Press 5 to get the remainder");
     console.log("Press 6 to exit");
-
+    
     var res = parseInt(prompt("Enter your choice:"));
 
     switch (res) {
