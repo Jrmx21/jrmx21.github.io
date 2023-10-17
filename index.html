@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>David Ruiz</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -46,16 +47,21 @@
     </nav>
 
     <!-- Contenido principal -->
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-md-8">
-          <h1>My first post</h1>
-          <p class="lead">Hi! I'm David and i like programming so much</p>
+    <div class="container">
+        <h1>Team Draw</h1>
+    
+        <label for="players">Enter player names (separated by line breaks):</label>
+        <textarea id="players" placeholder="Example:
+    John
+    Mary
+    Peter"></textarea>
+        <button onclick="drawTeams()">Draw Teams</button>
+    
+        <h2>Resulting Teams:</h2>
+        <ul id="teams"></ul>
+      </div>
           <button id="myButton" class="btn btn-primary">Calculator</button>
-        </div>
-        <div class="col-md-4">
-
-        </div>
+        
       </div>
     </div>
 
@@ -81,6 +87,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
-    
+    <script src="chooseTeam.js"></script>
   </body>
 </html>
