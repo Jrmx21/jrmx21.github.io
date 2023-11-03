@@ -114,6 +114,11 @@ function crearBaraja() {
   }
   alert(baraja);
 }
+var baraja = document.getElementById("baraja");
+baraja.addEventListener("click", baraja);
+function baraja(){
+barajarBaraja(baraja);
+}
 // Barajar la baraja
 function barajarBaraja(array) {
   for (let i = 0; i < array.length; i++) {
@@ -158,6 +163,9 @@ function comprobarPuntuacionCarta(carta) {
 crearBaraja();
 barajarBaraja(baraja);
 let deseaJugar = true;
+var botonSYM = document.getElementById("botonSYM");
+botonSYM.addEventListener("click", sieteYMedia);
+function sieteYMedia(){
 while (deseaJugar == true) {
   deseaJugar = confirm("¿Desea jugar al juego de la 7 y media?");
   if (deseaJugar == false) {
@@ -319,4 +327,4 @@ while (deseaJugar == true) {
       }
     }
   }
-}
+}}
