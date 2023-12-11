@@ -5,7 +5,6 @@ var myButton = document.getElementById("myButton");
 myButton.addEventListener("click", runScript);
 
 function runScript() {
-  alert("Script executed!");
   var a = prompt("Enter the first number");
   var b = prompt("Enter the second number");
   alert(
@@ -40,20 +39,10 @@ function runScript() {
         console.log(parseInt(a) % parseInt(b));
         break;
       case 6:
-        var res2 = "";
-        while (res2 !== "y") {
-          console.log("Are you sure you want to exit (y/n)");
-          res2 = prompt();
-          if (res2 === "y") {
-            exit = true;
-            break;
-          } else if (res2 === "n") {
-            console.log("Opening the menu again");
-          } else {
-            console.log("Invalid response");
-          }
-        }
+        exit = true;
+        console.log("BYE BYE!!!")
         break;
+
       default:
         console.log("Invalid choice");
     }
